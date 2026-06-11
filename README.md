@@ -1,3 +1,7 @@
+## 🚀 Live Demo: [CSSAnimator](https://ishaansharmathedev.github.io/CSSAnimator/)
+
+> Try it in your browser: **[https://ishaansharmathedev.github.io/CSSAnimator/](https://ishaansharmathedev.github.io/CSSAnimator/)**
+
 # CSSAnimator
 
 An interactive CSS keyframe animation builder with 10 presets, live preview, and CSS export.
