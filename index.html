@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>CSSAnimator</title><link rel="stylesheet" href="styles/main.css"/></head>
+<body><div id="app">
+  <header class="topbar"><span class="logo">🎨 CSSAnimator</span></header>
+  <div class="main">
+    <div class="left-panel">
+      <div class="section-label">Presets</div>
+      <div id="preset-list" class="preset-list"></div>
+      <div class="section-label" style="margin-top:12px">Keyframes CSS</div>
+      <textarea id="css-editor" rows="12" spellcheck="false"></textarea>
+      <div class="controls-grid">
+        <label>Duration<input id="dur-input" type="number" value="1" min="0.1" step="0.1"/>s</label>
+        <label>Delay<input id="delay-input" type="number" value="0" min="0" step="0.1"/>s</label>
+        <label>Iterations<input id="iter-input" value="infinite"/></label>
+        <label>Timing<select id="timing-select"><option>ease</option><option>ease-in</option><option>ease-out</option><option>ease-in-out</option><option>linear</option><option>cubic-bezier(0.68,-0.55,0.27,1.55)</option></select></label>
+        <label>Direction<select id="dir-select"><option>normal</option><option>reverse</option><option>alternate</option><option>alternate-reverse</option></select></label>
+        <label>Fill<select id="fill-select"><option>none</option><option>forwards</option><option>backwards</option><option>both</option></select></label>
+      </div>
+      <div class="btn-row">
+        <button id="btn-apply" class="btn-primary">Apply</button>
+        <button id="btn-stop">Stop</button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="preview-area">
+        <div class="section-label">Preview</div>
+        <div class="preview-stage">
+          <div id="preview-box" class="preview-box">Box</div>
+        </div>
+        <div class="box-controls">
+          <label>Text <input id="preview-content" value="Box" style="width:80px"/></label>
+          <label>BG <input type="color" id="box-bg" value="#4a90d9"/></label>
+          <label>Color <input type="color" id="box-color" value="#ffffff"/></label>
+        </div>
+      </div>
+      <div class="output-area">
+        <div class="section-label">Generated CSS <button id="btn-copy-css" class="small-btn">Copy</button></div>
+        <pre id="generated-css" class="generated-css"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="src/animations.js"></script><script src="src/app.js"></script></body></html>
